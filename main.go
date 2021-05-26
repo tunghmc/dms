@@ -184,7 +184,7 @@ func main() {
 			return
 		}(config.IfName),
 		HTTPConn: func() net.Listener {
-			conn, err := net.Listen("tcp", config.Http)
+			conn, err := net.Listen("tcp4", config.Http)
 			if err != nil {
 				log.Fatal(err)
 			}
