@@ -16,6 +16,15 @@ func init() {
 	if err := mime.AddExtensionType(".ogv", "video/ogg"); err != nil {
 		log.Printf("Could not register video/ogg MIME type: %s", err)
 	}
+	if err := mime.AddExtensionType(".dsf", "audio/dsf"); err != nil {
+		log.Printf("Could not register audio/dsf MIME type: %s", err)
+	}
+	if err := mime.AddExtensionType(".dts", "audio/dts"); err != nil {
+		log.Printf("Could not register audio/dts MIME type: %s", err)
+	}
+	if err := mime.AddExtensionType(".ape", "audio/ape"); err != nil {
+		log.Printf("Could not register audio/ape MIME type: %s", err)
+	}
 }
 
 // Example: "video/mpeg"
